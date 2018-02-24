@@ -6,7 +6,7 @@ package edu.towson.cis.cosc442.project2.vendingmachine;
 public class VendingMachineItem {
 
 	// The name of the item
-	private String name;
+	 String name;
 
 	// The price of the item
 	private double price;
@@ -22,6 +22,11 @@ public class VendingMachineItem {
 	 * @param price The price of the item
 	 * @throws VendingMachineException Thrown if price is less than zero
 	 */
+	
+	public VendingMachineItem(){
+		
+	}
+	
 	public VendingMachineItem( String name, double price ) throws VendingMachineException {
 		this.name = name;
 		if( price < 0 ) {

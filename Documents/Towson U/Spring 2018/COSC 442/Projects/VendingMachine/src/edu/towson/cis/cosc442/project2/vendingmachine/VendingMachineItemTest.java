@@ -6,32 +6,66 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class VendingMachineItemTest.
+ */
 public class VendingMachineItemTest {
 	
-	VendingMachineItem price1;
-
+	/** The item. */
+	VendingMachineItem item;
+	
+	
+	/**
+	 * Sets the up.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Before
 	public void setUp() throws Exception {
-		price1 = new VendingMachineItem(null, 0);
+	
+		item = new VendingMachineItem("bread", 3.75);
+			
 	}
 
+	/**
+	 * Tear down.
+	 *
+	 * @throws Exception the exception
+	 */
 	@After
 	public void tearDown() throws Exception {
 	}
 
+	/**
+	 * Test vending machine item.
+	 */
 	@Test
 	public void testVendingMachineItem() {
-		fail("Not yet implemented");
+		
+		assertEquals("bread", item.getName());
+		assertEquals(3.75, item.getPrice(), 0.01);	
+		
 	}
 
+	/**
+	 * Test get name.
+	 */
 	@Test
 	public void testGetName() {
-		fail("Not yet implemented");
+		
+		
+		assertEquals("bread", item.getName());
 	}
 
+	/**
+	 * Test get price.
+	 */
 	@Test
 	public void testGetPrice() {
-		assertEquals();
+		
+		
+		assertEquals(3.75, item.getPrice(), 0.01);
 	}
 
 }
